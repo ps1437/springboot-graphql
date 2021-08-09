@@ -1,0 +1,9 @@
+
+type BookVO {
+    id: Int
+    title:ID!
+    author:String
+    genre:String
+    height:Int
+    publisher:String
+}

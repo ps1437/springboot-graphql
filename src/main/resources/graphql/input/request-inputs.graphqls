@@ -1,0 +1,16 @@
+
+input BookTitleAuthorRequest {
+    title:ID!
+    author:String
+}
+
+
+input BookRequest {
+    id: Int
+    title:ID!
+    author:String
+    genre:String
+    height:Int
+    publisher:String
+}
+

@@ -163,7 +163,7 @@ mutation {
 
 #Request
 {
-    findByTitleAndAuthor(request: {title: "Fundamentals of Wavelets", author: "Goswami, Jaideva"}) {
+    findByTitleAndAuthor(where: {title: "Fundamentals of Wavelets", author: "Goswami, Jaideva"}) {
         title
         author
         id

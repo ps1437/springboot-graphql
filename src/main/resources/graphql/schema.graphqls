@@ -1,0 +1,20 @@
+scalar VOID
+
+schema {
+    query: BookQuery
+    mutation: BookCommand
+}
+
+
+type BookQuery {
+    findAll : [BookVO]
+    findById(id:Int): BookVO
+    findByTitle(title:ID): [BookVO]
+    findByTitleAndAuthor(where:BookTitleAuthorRequest): [BookVO]
+}
+
+type BookCommand{
+    deleteById(id:Int): String
+    update(request:BookRequest):BookVO
+    save(request:BookRequest):VOID
+}
